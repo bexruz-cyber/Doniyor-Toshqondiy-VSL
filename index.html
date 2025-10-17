@@ -5,7 +5,449 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:'Lalezar Subset';src:url('/font/Lalezar-Subset.woff2') format('woff2'),url('/fonts/Lalezar-Subset.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}body,html{font-family:sans-serif;overflow-x:hidden!important;width:100%}.conatainer{max-width:430px;margin:0 auto;padding-top:30px;padding-left:12px;padding-right:12px;overflow-x:hidden}.header__names,.intro{padding:9px 20px 9px 30px;box-shadow:0 6px 10px 0 #76111733}.header__names{max-width:293px;margin:0 auto 30px;border:2px solid #bb0707;border-radius:10px;display:flex;justify-content:space-between;align-items:center}.header__row,.video__content{display:flex;flex-direction:column}.header__row{align-items:center}.header__name{font-size:12px;font-weight:600}.header__name--dup{margin-top:3px;font-size:20px}.header__headline{font-family:'Lalezar Subset';font-size:28px;line-height:34px;text-align:center;text-transform:uppercase;margin-bottom:14px}.intro{max-width:330px;margin:0 auto 30px;border:2px solid #bb0707;border-radius:10px}.letter__cta,.video__cta{box-shadow:0 5px 0 0 #610606;color:#fff;text-transform:uppercase;width:100%;text-align:center}.intro__title{font-weight:600;font-size:18px;line-height:22px;text-align:center}.letter__para strong,.video__cta{font-weight:700}.video{padding-bottom:30px}.video__content{justify-content:center;align-items:center;gap:8px}.btn{text-decoration:none}.video__cta{margin:0 auto;max-width:331px;border-radius:20px;border:none;background:linear-gradient(90deg,#bb0707 0,#d50606 51%,#bb0707 100%);padding:23px 29px;font-size:18px}.video__thumb{position:relative}.big__arrow__left{position:absolute;left:-70px;top:-64px}.big__arrow__right{position:absolute;right:-70px;top:-64px}.arrow__left{position:absolute;bottom:-36px;left:-24px}.arrow__right{position:absolute;bottom:-36px;right:-24px}.letter{max-width:860px;margin:0 auto;padding-bottom:45px}.letter__title{font-family:'Lalezar Subset',Lalezar,sans-serif;font-weight:600;font-size:32px;line-height:1.2;text-transform:uppercase;text-align:center;margin:0 0 16px}.letter__body{border:1px solid #000;border-radius:16px;padding:20px;background:#fff}.letter__para{font-family:sans-serif;font-weight:400;font-size:16px;line-height:1.75;margin:0 0 12px}.letter__cta,.letter__para--lead{font-size:18px}.letter__subtitle{font-size:18px;font-weight:600;margin:18px 0 8px}.letter__list{margin:0 0 16px;padding-left:1.2rem}.letter__list--checks{list-style:none;padding-left:0;margin-left:0}.letter__list--checks li{position:relative;padding-left:1.6rem;margin:6px 0}.letter__list--checks li::before{content:"✅";position:absolute;left:0;top:0;transform:translateY(2px)}.letter__divider{display:block;margin:20px auto}.letter__cta{display:inline-block;margin:0 auto;max-width:411px;border-radius:20px;border:none;background:linear-gradient(90deg,#bb0707 0,#d50606 51%,#bb0707 100%);padding:23px 16px;font-weight:700}.letter__cta-per,.testimonials__cta-per{position:relative}.letter__cta-arrow__left{position:absolute;top:-38px;left:-18px}.letter__cta-arrow__right{position:absolute;top:-38px;right:-18px}.profile{display:flex;flex-direction:column;justify-content:center;align-items:center;padding-bottom:60px}.profile__avatar{margin-bottom:15px}.profile__name{font-family:'Lalezar Subset',Lalezar,sans-serif;font-style:28px;margin-bottom:22px;text-transform:uppercase}.profile__divider,.profile__highlights{width:100%}.profile__item{width:100%;border:1px solid #bb0707;border-radius:15px;margin-bottom:15px;display:flex;align-items:center;justify-content:space-between;gap:17px}.profile__item--text-first{padding-left:20px}.profile__title{font-family:sans-serif;font-weight:600;font-size:15px;line-height:18px}.profile__item--icon-first{padding-right:20px}.testimonials__pagination{display:none!important}.testimonials{padding-bottom:70px}.testimonials__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.testimonials__title{font-weight:500;font-size:24px;line-height:32px}.testimonials__btn{border:none;background-color:transparent}.testimonials__slider{margin-bottom:8px;height:auto;transition:height .2s;overflow:hidden}.testimonials__note{max-width:313px;margin:0 auto 12px;text-align:center}.testimonials__divider{margin-bottom:12px}.testimonials__note_per{display:flex;flex-direction:column;justify-content:center;align-items:center}.testimonials__cta-big__arrow__left{position:absolute;top:-94px;left:-40px}.testimonials__cta-big__arrow__right{position:absolute;top:-94px;right:-40px}.swiper-slide,.swiper-wrapper{height:auto!important}.swiper-slide{display:flex;align-items:center;justify-content:center}.testimonials__img{display:block;max-width:100%;width:auto;height:auto}@media screen and (max-width:415px){.video__img{width:100%}.profile__title{font-size:16px}.profile__icon{width:160px}}@media screen and (max-width:375px){.profile__title{font-size:14px}.profile__icon{width:160px}}</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        @font-face {
+            font-family: 'Lalezar Subset';
+            src: url('/font/Lalezar-Subset.woff2') format('woff2'), url('/fonts/Lalezar-Subset.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('./font/Poppins-400.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('./font/Poppins-500.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('./font/Poppins-700.woff2') format('woff2');
+        }
+
+        body,
+        html {
+            font-family: sans-serif;
+            overflow-x: hidden !important;
+            width: 100%
+        }
+
+        .conatainer {
+            max-width: 430px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-left: 12px;
+            padding-right: 12px;
+            overflow-x: hidden
+        }
+
+        .header__names,
+        .intro {
+            padding: 9px 20px 9px 30px;
+            box-shadow: 0 6px 10px 0 #76111733
+        }
+
+        .header__names {
+            max-width: 293px;
+            margin: 0 auto 30px;
+            border: 2px solid #bb0707;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .header__row,
+        .video__content {
+            display: flex;
+            flex-direction: column
+        }
+
+        .header__row {
+            align-items: center
+        }
+
+        .header__name {
+            font-size: 12px;
+            font-weight: 600
+        }
+
+        .header__name--dup {
+            margin-top: 3px;
+            font-size: 20px
+        }
+
+        .header__headline {
+            font-family: 'Lalezar Subset';
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 14px
+        }
+
+        .intro {
+            max-width: 330px;
+            margin: 0 auto 30px;
+            border: 2px solid #bb0707;
+            border-radius: 10px
+        }
+
+        .letter__cta,
+        .video__cta {
+            box-shadow: 0 5px 0 0 #610606;
+            color: #fff;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center
+        }
+
+        .intro__title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center
+        }
+
+        .letter__para strong,
+        .video__cta {
+            font-weight: 700
+        }
+
+        .video {
+            padding-bottom: 30px
+        }
+
+        .video__content {
+            justify-content: center;
+            align-items: center;
+            gap: 8px
+        }
+
+        .btn {
+            text-decoration: none
+        }
+
+        .video__cta {
+            margin: 0 auto;
+            max-width: 331px;
+            border-radius: 20px;
+            border: none;
+            background: linear-gradient(90deg, #bb0707 0, #d50606 51%, #bb0707 100%);
+            padding: 23px 29px;
+            font-size: 18px
+        }
+
+        .video__thumb {
+            position: relative
+        }
+
+        .big__arrow__left {
+            position: absolute;
+            left: -70px;
+            top: -64px
+        }
+
+        .big__arrow__right {
+            position: absolute;
+            right: -70px;
+            top: -64px
+        }
+
+        .arrow__left {
+            position: absolute;
+            bottom: -36px;
+            left: -24px
+        }
+
+        .arrow__right {
+            position: absolute;
+            bottom: -36px;
+            right: -24px
+        }
+
+        .letter {
+            max-width: 860px;
+            margin: 0 auto;
+            padding-bottom: 45px
+        }
+
+        .letter__title {
+            font-family: 'Lalezar Subset', Lalezar, sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 16px
+        }
+
+        .letter__body {
+            border: 1px solid #000;
+            border-radius: 16px;
+            padding: 20px;
+            background: #fff
+        }
+
+        .letter__para {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.75;
+            margin: 0 0 12px
+        }
+
+        .letter__cta,
+        .letter__para--lead {
+            font-size: 18px
+        }
+
+        .letter__subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 18px 0 8px
+        }
+
+        .letter__list {
+            margin: 0 0 16px;
+            padding-left: 1.2rem
+        }
+
+        .letter__list--checks {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0
+        }
+
+        .letter__list--checks li {
+            position: relative;
+            padding-left: 1.6rem;
+            margin: 6px 0
+        }
+
+        .letter__list--checks li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateY(2px)
+        }
+
+        .letter__divider {
+            display: block;
+            margin: 20px auto
+        }
+
+        .letter__cta {
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 411px;
+            border-radius: 20px;
+            border: none;
+            background: linear-gradient(90deg, #bb0707 0, #d50606 51%, #bb0707 100%);
+            padding: 23px 16px;
+            font-weight: 700
+        }
+
+        .letter__cta-per,
+        .testimonials__cta-per {
+            position: relative
+        }
+
+        .letter__cta-arrow__left {
+            position: absolute;
+            top: -38px;
+            left: -18px
+        }
+
+        .letter__cta-arrow__right {
+            position: absolute;
+            top: -38px;
+            right: -18px
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 60px
+        }
+
+        .profile__avatar {
+            margin-bottom: 15px
+        }
+
+        .profile__name {
+            font-family: 'Lalezar Subset', Lalezar, sans-serif;
+            font-style: 28px;
+            margin-bottom: 22px;
+            text-transform: uppercase
+        }
+
+        .profile__divider,
+        .profile__highlights {
+            width: 100%
+        }
+        .profile__title{
+            margin-top: 10px;
+        }
+
+        .profile__item {
+            width: 100%;
+            border: 1px solid #bb0707;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 17px
+        }
+
+        .profile__item--text-first {
+            padding-left: 20px
+        }
+
+        .profile__title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px
+        }
+
+        .profile__title span {
+            font-weight: 700;
+        }
+
+        .profile__item--icon-first {
+            padding-right: 20px
+        }
+
+        .testimonials__pagination {
+            display: none !important
+        }
+
+        .testimonials {
+            padding-bottom: 70px
+        }
+
+        .testimonials__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px
+        }
+
+        .testimonials__title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px
+        }
+
+        .testimonials__btn {
+            border: none;
+            background-color: transparent
+        }
+
+        .testimonials__slider {
+            margin-bottom: 8px;
+            height: auto;
+            transition: height .2s;
+            overflow: hidden
+        }
+
+        .testimonials__note {
+            font-family: "Poppins", sans-serif;
+            max-width: 313px;
+            margin: 0 auto 12px;
+            text-align: center
+        }
+
+        .testimonials__divider {
+            margin-bottom: 12px
+        }
+
+        .testimonials__note_per {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+        }
+
+        .testimonials__cta-big__arrow__left {
+            position: absolute;
+            top: -94px;
+            left: -40px
+        }
+
+        .testimonials__cta-big__arrow__right {
+            position: absolute;
+            top: -94px;
+            right: -40px
+        }
+
+        .swiper-slide,
+        .swiper-wrapper {
+            height: auto !important
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .testimonials__img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto
+        }
+
+        @media screen and (max-width:415px) {
+            .video__img {
+                width: 100%
+            }
+
+            .profile__title {
+                font-size: 16px
+            }
+
+            .profile__icon {
+                width: 160px
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .profile__title {
+                font-size: 14px
+            }
+
+            .profile__icon {
+                width: 160px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -172,7 +614,8 @@
                 <!-- Item 3: text then icon -->
                 <div class="profile__item profile__item--text-first">
                     <div class="profile__content">
-                        <h3 class="profile__title">Xalqaro va milliy <br> C1 darajali <br> sertifikat sohibi</h3>
+                        <h3 class="profile__title">Xalqaro, milliy <br> <span>C1 darajali</span> va <br> Xalqaro
+                            <span>At-Tanal</span> <br> sertifikatlari sohibi</h3>
                     </div>
                     <img src="./images/about/about_image_3.avif" alt="" class="profile__icon" width="231" />
                 </div>
@@ -263,9 +706,11 @@
                 </div>
 
                 <div class="testimonials__cta-per">
-                    <img class="testimonials__cta-big__arrow__left" src="./images/arrows/big-arrow-left.png" alt="big-arrow-left">
+                    <img class="testimonials__cta-big__arrow__left" src="./images/arrows/big-arrow-left.png"
+                        alt="big-arrow-left">
                     <a href="#" class="testimonials__cta letter__cta btn btn--primary">o’rganishga tayyorman</a>
-                    <img class="testimonials__cta-big__arrow__right" src="./images/arrows/big-arrow-right.png" alt="big-arrow-right">
+                    <img class="testimonials__cta-big__arrow__right" src="./images/arrows/big-arrow-right.png"
+                        alt="big-arrow-right">
                 </div>
             </div>
         </section>
@@ -273,7 +718,7 @@
         <!-- Swiper JS (minified) -->
         <script defer src="./js/swiper/swiper-bundle.min.js"></script>
 
-        <script>document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".testimonials__slider"),t=new Swiper(".testimonials__slider",{loop:!0,autoHeight:!1,navigation:{nextEl:".testimonials__next",prevEl:".testimonials__prev"},pagination:{el:".testimonials__pagination",clickable:!0}});function n(){const t=e.querySelector(".swiper-slide-active .testimonials__img");if(!t)return;const n=t.getBoundingClientRect().height;e.style.height=(n||0)+"px"}t.on("init",n),t.on("imagesReady",n),t.on("slideChangeTransitionEnd",n),t.on("resize",n),document.querySelectorAll(".testimonials__img").forEach((function(e){e.complete||e.addEventListener("load",n,{once:!0})})),n()}));</script>
+        <script>document.addEventListener("DOMContentLoaded", (function () { const e = document.querySelector(".testimonials__slider"), t = new Swiper(".testimonials__slider", { loop: !0, autoHeight: !1, navigation: { nextEl: ".testimonials__next", prevEl: ".testimonials__prev" }, pagination: { el: ".testimonials__pagination", clickable: !0 } }); function n() { const t = e.querySelector(".swiper-slide-active .testimonials__img"); if (!t) return; const n = t.getBoundingClientRect().height; e.style.height = (n || 0) + "px" } t.on("init", n), t.on("imagesReady", n), t.on("slideChangeTransitionEnd", n), t.on("resize", n), document.querySelectorAll(".testimonials__img").forEach((function (e) { e.complete || e.addEventListener("load", n, { once: !0 }) })), n() }));</script>
     </div>
 </body>
 
