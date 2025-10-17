@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lalezar Subset';
+    src: url('/font/Lalezar-Subset.woff2') format('woff2'),
+        url('/fonts/Lalezar-Subset.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    /* unicode-range is already in the downloaded CSS if you prefer */
+}
+
+html,
+body {
+    font-family: sans-serif;
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+.conatainer {
+    max-width: 430px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow-x: hidden;
+}
+
+.header__names {
+    max-width: 293px;
+    margin: 0 auto;
+}
+
+.header__names {
+    border: 2px solid #BB0707;
+    padding: 9px 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px 0px #76111733;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.header__name--dup {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.header__headline {
+    font-family: 'Lalezar Subset';
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.intro {
+    max-width: 330px;
+    margin: 0 auto;
+    border: 2px solid #BB0707;
+    padding: 9px 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px 0px #76111733;
+
+    margin-bottom: 30px;
+}
+
+.intro__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+
+.video {
+    padding-bottom: 30px;
+}
+
+.video__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.btn {
+    text-decoration: none;
+}
+
+.video__cta {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 331px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, #BB0707 0%, #D50606 51%, #BB0707 100%);
+    box-shadow: 0px 5px 0px 0px #610606;
+    padding: 23px 29px;
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.video__thumb {
+    position: relative;
+}
+
+.big__arrow__left {
+    position: absolute;
+    left: -70px;
+    top: -64px;
+}
+
+.big__arrow__right {
+    position: absolute;
+    right: -70px;
+    top: -64px;
+}
+
+.arrow__left {
+    position: absolute;
+    bottom: -36px;
+    left: -24px;
+}
+
+.arrow__right {
+    position: absolute;
+    bottom: -36px;
+    right: -24px;
+}
+
+.letter {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.letter__title {
+    font-family: 'Lalezar Subset', Lalezar, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.letter__body {
+    border: 1px solid #000000;
+    border-radius: 16px;
+    padding: 20px;
+    background: #fff;
+}
+
+/* Paragraphs */
+.letter__para {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 0 12px 0;
+}
+
+.letter__para strong {
+    font-weight: 700;
+}
+
+.letter__para--lead {
+    font-size: 18px;
+}
+
+.letter__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+
+.letter__list {
+    margin: 0 0 16px 0;
+    padding-left: 1.2rem;
+}
+
+.letter__list--checks {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.letter__list--checks li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin: 6px 0;
+}
+
+.letter__list--checks li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(2px);
+}
+
+.letter__divider {
+    display: block;
+    margin: 20px auto;
+}
+
+.letter__cta {
+    display: inline-block;
+    margin: 8px auto 0;
+}
+
+.letter__cta {
+    width: 100%;
+    max-width: 411px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, #BB0707 0%, #D50606 51%, #BB0707 100%);
+    box-shadow: 0px 5px 0px 0px #610606;
+    padding: 23px 16px;
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.letter__cta-per {
+    position: relative;
+}
+
+.letter__cta-arrow__left {
+    position: absolute;
+    top: -38px;
+    left: -18px;
+}
+
+.letter__cta-arrow__right {
+    position: absolute;
+    top: -38px;
+    right: -18px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.profile__avatar {
+    margin-bottom: 15px;
+}
+
+.profile__name {
+    font-family: 'Lalezar Subset', Lalezar, sans-serif;
+    font-style: 28px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.profile__highlights {
+    width: 100%;
+}
+
+.profile__item {
+    width: 100%;
+    border: 1px solid #BB0707;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 17px;
+}
+
+.profile__item--text-first {
+    padding-left: 20px;
+}
+
+
+.profile__title {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.profile__item--icon-first {
+    padding-right: 20px;
+}
+
+.profile__divider {
+    width: 100%;
+}
+
+.testimonials__pagination {
+    display: none !important;
+}
+
+
+
+
+
+.testimonials {
+    padding-bottom: 70px;
+}
+
+.testimonials__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonials__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.testimonials__controls {}
+
+.testimonials__btn {
+    border: none;
+    background-color: transparent;
+}
+
+
+.testimonials__prev {}
+
+.testimonials__next {}
+
+.testimonials__slider {
+    margin-bottom: 8px;
+}
+
+
+.testimonials__note {
+    max-width: 313px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+
+.swiper {}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.testimonials__slide {}
+
+.swiper-slide {}
+
+.testimonials__img {
+    width: 100%;
+}
+
+.testimonials__divider {
+    margin-bottom: 12px;
+}
+
+.testimonials__note_per {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__cta {}
+
+.testimonials__cta-per{
+    position: relative;
+}
+
+.testimonials__cta-big__arrow__left{
+    position: absolute;
+    top: -94px;
+    left: -40px;
+}
+
+.testimonials__cta-big__arrow__right{
+    position: absolute;
+    top: -94px;
+    right: -40px;
+}
+
+.letter__cta {}
+
+.btn {}
+
+.btn--primary {}
+
+/* Konteyner balandligini JS o‘zgartiradi — silliq animatsiya uchun */
+.testimonials__slider {
+    height: auto;
+    /* boshlang‘ich */
+    transition: height .2s ease;
+    overflow: hidden;
+}
+
+/* Swiper default height:100% ni bekor qilamiz */
+.swiper-wrapper,
+.swiper-slide {
+    height: auto !important;
+}
+
+/* Slayd ichida markazga joylaymiz, lekin balandlikni cho‘zmaymiz */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rasmlar: kattasi sig‘sin, kichigi cho‘zilmasin */
+.testimonials__img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    /* kichik rasm 100% ga cho‘zilmaydi */
+    height: auto;
+    /* nisbat saqlanadi */
+}
+
+
+@media screen and (max-width: 415px) {
+    .video__img {
+        width: 100%;
+    }
+
+    .profile__title {
+        font-size: 16px;
+    }
+
+    .profile__icon {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .profile__title {
+        font-size: 14px;
+    }
+
+    .profile__icon {
+        width: 160px;
+    }
+}
